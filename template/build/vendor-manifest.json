@@ -1,0 +1,27 @@
+{
+  "name": "vendor_library",
+  "content": {
+    "./node_modules/process/browser.js": 1,
+    "./node_modules/moment/moment.js": 2,
+    "./node_modules/superagent/lib/is-object.js": 3,
+    "./node_modules/moment/locale/en-gb.js": 4,
+    "./node_modules/moment/locale/zh-cn.js": 5,
+    "./node_modules/webpack/buildin/module.js": 6,
+    "./node_modules/component-emitter/index.js": 7,
+    "./node_modules/js-cookie/src/js.cookie.js": 8,
+    "./node_modules/lodash/lodash.js": 9,
+    "./node_modules/q/q.js": 11,
+    "./node_modules/setimmediate/setImmediate.js": 12,
+    "./node_modules/superagent/lib/client.js": 13,
+    "./node_modules/superagent/lib/is-function.js": 14,
+    "./node_modules/superagent/lib/request-base.js": 15,
+    "./node_modules/superagent/lib/response-base.js": 16,
+    "./node_modules/superagent/lib/should-retry.js": 17,
+    "./node_modules/superagent/lib/utils.js": 18,
+    "./node_modules/timers-browserify/main.js": 19,
+    "./node_modules/vue-i18n/dist/vue-i18n.common.js": 20,
+    "./node_modules/vue-router/dist/vue-router.common.js": 21,
+    "./node_modules/vue/dist/vue.runtime.common.js": 22,
+    "./node_modules/vuex/dist/vuex.js": 23
+  }
+}
