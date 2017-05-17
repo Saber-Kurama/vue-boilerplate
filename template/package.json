@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
+    "cli": "cd cli && npm i -g && cd -",
     "build:dll": "webpack --config build/webpack.dll.conf.js"{{#preCommit}},
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"{{/preCommit}}{{#unit}},
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run"{{/unit}}{{#e2e}},
@@ -33,6 +34,7 @@
     {{#i18n}}
     "vue-i18n": "^5.0.0",
     {{/i18n}}
+    "babel-polyfill": "^6.20.0",
     "element-ui": "^1.2.2"{{#if_eq styleLib "bootstrap4"}},
     "bootstrap": "^4.0.0-alpha.6"{{/if_eq}}{{#if_eq styleLib "bootstrap3"}},
     "bootstrap": "^3.3.7"{{/if_eq}}{{#if_eq styleLib "bulma"}},
@@ -62,6 +64,7 @@
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
+    "standard": "^9.0.1",
     {{/if_eq}}
     {{#if_eq lintConfig "airbnb"}}
     "eslint-config-airbnb-base": "^11.0.1",
@@ -122,6 +125,7 @@
     "svgo": "^0.7.1",
     "svgo-loader": "^1.1.0",
     "svgxuse": "^1.1.16",
+    "progress-bar-webpack-plugin": "^1.9.3",
     {{#notifier}}
     "webpack-build-notifier": "^0.1.13",
     {{/notifier}}

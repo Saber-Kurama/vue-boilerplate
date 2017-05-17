@@ -1,16 +1,17 @@
 var path = require('path')
+var chalk = require('chalk')
 var webpack = require('webpack')
 var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
 var svgoConfig = require('../config/svgo-config.json')
-function resolve (dir) {
-  return path.join(__dirname, '..', dir)
-}
+
+var ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
+
 
 module.exports = {
   entry: {
@@ -32,6 +33,7 @@ module.exports = {
       '@constants': resolve('src/constants'),
       '@partials': resolve('src/partials'),
       '@views': resolve('src/views'),
+      '@pages': resolve('src/views/pages'),
       '@components': resolve('src/components'),
       '@store': resolve('src/store'),
       '@helper': resolve('src/helper'),
@@ -92,6 +94,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new ProgressBarPlugin({
+      format: '  build [:bar] ' + chalk.green.bold(':percent') + ' (:elapsed seconds)'
+    }),
     new webpack.DllReferencePlugin({
       context: path.resolve(__dirname, '..'),
       manifest: require('./vendor-manifest.json')

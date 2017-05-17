@@ -1,0 +1,23 @@
+[
+  {
+		"id": "/demo",
+		"zhLabel": "演示",
+		"enLabel": "Demo",
+		"icon": "menu",
+		"parent": ""
+	},
+	{
+		"id": "/demo/form",
+		"zhLabel": "表单",
+		"enLabel": "Form",
+		"icon": "document",
+		"parent": "/demo"
+	},
+	{
+		"id": "/demo/list",
+		"zhLabel": "列表",
+		"enLabel": "list",
+		"icon": "document",
+		"parent": "/demo"
+	}
+]

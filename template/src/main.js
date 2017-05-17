@@ -1,6 +1,5 @@
+import 'babel-polyfill'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-
-
 import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import store from './store/index'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
@@ -33,12 +32,6 @@ import Filters from './filters'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 for (let key in Filters) {
   Vue.filter(key, Filters[key]){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 }
-
-// global components
-import Icon from '@components/Icon'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-Vue.component('icon', Icon){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-
-
 
 /* eslint-disable no-new */
 new Vue({

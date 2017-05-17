@@ -1,0 +1,13 @@
+{
+  "{{name}}": {
+    "action": {
+      "updateName": "updateName"
+    },
+    "getter": {
+      "name": "name"
+    },
+    "mutation": {
+      "updateName": "updateName"
+    }
+  }
+}

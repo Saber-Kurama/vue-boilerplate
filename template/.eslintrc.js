@@ -50,6 +50,7 @@ module.exports = {
     }],
     {{/if_eq}}
     'no-multiple-empty-lines': [2, {'max': 4}],
+    'prefer-template': 'error',
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }

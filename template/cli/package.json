@@ -1,0 +1,19 @@
+{
+  "author": "aron.yao",
+  "name": "vt-cli",
+  "version": "0.0.1",
+  "description": "cli to generate files in webpack-template",
+  "bin": {
+    "vt": "bin/bin.js"
+  },
+  "preferGlobal": "true",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
+    "handlebars": "^4.0.6",
+    "inquirer": "^3.0.6",
+    "json-format": "^1.0.0",
+    "lodash": "^4.17.4",
+    "minimist": "^1.2.0"
+  }
+}

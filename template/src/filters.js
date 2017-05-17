@@ -6,6 +6,6 @@ export default {
   },
   dayConvert (time) {
     return time && Moment(time).format('YYYY-MM-DD'){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  }
 }
 

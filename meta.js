@@ -120,5 +120,5 @@ module.exports = {
     'build/webpack.test.conf.js': 'unit',
     'test/e2e/**/*': 'e2e'
   },
-  'completeMessage': 'To get started:\n\n{{^inPlace}}cd {{destDirName}}\n\n{{/inPlace}}npm install && npm run build:dll && npm run dev\n\n'
+  'completeMessage': 'To get started:\n\n{{^inPlace}}cd {{destDirName}}\n\n{{/inPlace}}npm install && npm run build:dll && npm run dev\n\nor\n\nyarn install && yarn run build:dll && yarn run dev'
 }
